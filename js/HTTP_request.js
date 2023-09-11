@@ -29,8 +29,8 @@ fetch("https://jsonplaceholder.typicode.com/posts")
           document.querySelectorAll("p").forEach((p_css_reset) => {
             p_css_reset.style.cssText = "display:-webkit-box;";
           });
-          // open interested article
-          cliked_item.srcElement.offsetParent.childNodes[2].style.cssText =
+          // expand interested article
+          cliked_item.target.offsetParent.childNodes[2].style.cssText =
             "display:block;";
         });
     })
