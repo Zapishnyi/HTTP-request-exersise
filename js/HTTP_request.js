@@ -5,7 +5,7 @@ document.body.appendChild(ul_item);
 fetch("https://jsonplaceholder.typicode.com/posts")
   .then((response) => response.json())
   .then((json) =>
-    // forming articles list filled with server data
+    // forming articles list filled with data from
     json.forEach((element) => {
       let li_item = document.createElement("li");
       let span_item = document.createElement("span");
