@@ -34,4 +34,6 @@ fetch("https://jsonplaceholder.typicode.com/posts")
             "display:block;";
         });
     })
-  );
+  )
+  // fetch error mesege
+  .catch((error) => (document.querySelector("h1").textContent = error));
